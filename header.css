@@ -1,0 +1,57 @@
+body {
+	margin: 0;
+}
+
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+a {text-decoration: none; /*убираем подчеркивание текста ссылок*/color: black;}
+li {
+	display: inline-block;
+	line-height: 200px;
+}
+li:nth-child(1) {
+	padding-right: 30vw;
+	font-size: 50px;
+	font-family: 'Impact', fantasy;
+}
+li:nth-child(2) {
+	font-size: 20px;
+	position: relative;
+	bottom: 10px;
+	font-family: 'Arial', sans-serif;
+}
+
+#header {
+	height: 200px;
+	/*vertical-align: middle;*/
+	text-align: left;
+	background-color: rgb(240,240,240);
+	margin-bottom: 80px;
+}
+
+@media screen and (min-device-width: 1650px) and (max-device-width: 1800px) {
+	#header {
+		padding-left: 18vw;
+	}
+}
+@media screen and (min-device-width: 1800px) {
+	#header {
+		padding-left: 18.5vw;
+	}
+}
+@media screen and (max-device-width: 1250px) {
+	#header {
+		padding-left: 15vw;
+	}
+	li:nth-child(2) {
+		font-size: 25px;
+	}
+}
+@media screen and (min-device-width: 1250px) and (max-device-width: 1650px) {
+	#header {
+		padding-left: 17vw;
+	}
+}

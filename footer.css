@@ -1,0 +1,28 @@
+#footer {
+	/*padding-top: calc(100vh - 440px);*/
+	text-align: right;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	/*padding-right: 25px;*/
+}
+
+@media screen and (min-device-width: 1650px) and (max-device-width: 1800px) {
+	#footer {
+		padding-right: 18vw;
+	}
+}
+@media screen and (min-device-width: 1800px) {
+	#footer {
+		padding-right: 18.5vw;
+	}
+}
+@media screen and (max-device-width: 1250px) {
+	#footer {
+		padding-right: 15vw;
+	}
+}
+@media screen and (min-device-width: 1250px) and (max-device-width: 1650px) {
+	#footer {
+		padding-right: 17vw;
+	}
+}

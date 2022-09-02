@@ -1,0 +1,25 @@
+#RewriteRule ^([0-9a-zA-Z]{5})/?$ script.php?id=$1
+#RewriteRule ^playlist/([0-9]+)/?$ script.php?id=$1
+#RewriteRule ^dir/([^/]+)/ script.php?get=$1
+#DocumentRoot "/home/url.cool/www"
+#<Directory>
+#    RewriteEngine On
+#    RewriteBase "/"
+#    RewriteRule "^index\.html$"  "welcome.html"
+#</Directory>
+
+AddDefaultCharset UTF-8
+php_value default_charset "utf-8"
+
+RewriteEngine On
+RewriteBase /
+RewriteRule site/link create_new_ref.php
+RewriteRule site/error validation.php
+RewriteRule site/faq faq.html
+RewriteRule site/404 404.html
+RewriteRule ^([0-9a-zA-Z]+)/?$ redirect.php?id=$1
+
+ErrorDocument 404 /site/404
+
+#Options +SymLinksIfOwnerMatch
+#RewriteEngine On
