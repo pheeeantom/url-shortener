@@ -14,15 +14,15 @@
 	#echo $sum;
 	try {
 		$host = "localhost";
-		$db_name = "oleg_references";
-		$user = "oleg";
+		$db_name = "refs";
+		$user = "root";
 		$pass = "asdf";
 		$dsn = "mysql:host=$host;dbname=$db_name";
 
 		$opt = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
 			PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);
 
-		$dbh = new PDO($dsn, $user, $pass);
+		$dbh = new PDO($dsn, $user);
 
 		$query = $dbh->query('SELECT * FROM refs WHERE id='.$sum);
 		$row = $query->fetch();
@@ -30,8 +30,7 @@
 			header('Location: '.$row['ref']);
 		}
 		else {
-			#header('HTTP/2 404 not found');
-			header('Location: http://oleg.mati.su/site/404');
+			header('HTTP/2 404 not found');
 		}
 	}
 	catch (PDOException $e) {

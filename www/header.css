@@ -15,13 +15,11 @@ li {
 li:nth-child(1) {
 	padding-right: 30vw;
 	font-size: 50px;
-	font-family: 'Impact', fantasy;
 }
 li:nth-child(2) {
 	font-size: 20px;
 	position: relative;
 	bottom: 10px;
-	font-family: 'Arial', sans-serif;
 }
 
 #header {
@@ -45,9 +43,6 @@ li:nth-child(2) {
 @media screen and (max-device-width: 1250px) {
 	#header {
 		padding-left: 15vw;
-	}
-	li:nth-child(2) {
-		font-size: 25px;
 	}
 }
 @media screen and (min-device-width: 1250px) and (max-device-width: 1650px) {

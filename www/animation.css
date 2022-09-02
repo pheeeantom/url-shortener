@@ -73,9 +73,3 @@ input[type="submit"]:hover {
 	color: black;
 	cursor: pointer;
 }
-
-@media screen and (max-device-width: 1250px) {
-  input[type="submit"] {
-    font-size: 25px;
-  }
-}
